@@ -1,4 +1,4 @@
-Summary:	retrieves images from a video4linux device
+Summary:	A Gnome Security Camera
 Name:		gspy
 Version:	0.1.8
 Release:	0.1
@@ -28,10 +28,8 @@ command string can include a token(s) "%f%" that will get replaced
 with the alarm picture filename. Typical uses would be to copy the
 alarm picture to a remote site using ftp or scp, email the picture to
 someone, play a sound annoucement... "Step away from the keyboard!",
-turn on lights using a parallel port or X10 interface, or ???. Have
-FUN
-
-%description -l pl
+turn on lights using a parallel port or X10 interface, or ???. 
+Have FUN
 
 %prep
 %setup -q -n %{name}
