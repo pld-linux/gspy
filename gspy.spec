@@ -56,26 +56,9 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%pre
-
-%post
-#%post	-p /sbin/ldconfig
-
-%preun
-
-%postun
-#%postun	-p /sbin/ldconfig
-
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS CREDITS ChangeLog NEWS README THANKS TODO
-
-# if _sysconfdir != /etc:
-#%%dir %{_sysconfdir}
 %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*
-
 %attr(755,root,root) %{_bindir}/*
-
 %{_datadir}/%{name}
-
-# initscript and its config
