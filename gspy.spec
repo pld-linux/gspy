@@ -5,6 +5,7 @@ Release:	0.1
 License:	GPL v2
 Group:		Applications
 Source0:	http://gspy.sourceforge.net/%{name}-%{version}-src.tar.gz
+# Source0-md5:	b8cdf73e0e11f0294bf979e195e66d32
 URL:		http://gspy.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
