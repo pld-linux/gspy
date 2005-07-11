@@ -1,22 +1,11 @@
-#
-# Conditional build:
-#
-Summary:	-
-Summary(pl):	-
+Summary:	retrieves images from a video4linux device
 Name:		gspy
 Version:	0.1.8
 Release:	0.1
 License:	GPL v2
 Group:		Applications
-#Icon:		-
 Source0:	http://gspy.sourceforge.net/%{name}-%{version}-src.tar.gz
-#Patch0:		%{name}-what.patch
 URL:		http://gspy.sourceforge.net/
-#BuildRequires:	autoconf
-#BuildRequires:	automake
-#BuildRequires:	libtool
-#BuildRequires:	-
-#PreReq:		-
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -46,11 +35,8 @@ FUN
 
 %prep
 %setup -q -n %{name}
-#%patch0 -p1
 
 %build
-# if ac/am/* rebuilding is necessary, do it in this order and add
-# appropriate BuildRequires
 %{__gettextize}
 %{__libtoolize}
 %{__aclocal}
@@ -63,8 +49,6 @@ cp -f /usr/share/automake/config.sub .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
-#install -d $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
