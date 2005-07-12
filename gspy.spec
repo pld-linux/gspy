@@ -1,5 +1,5 @@
-Summary:	A Gnome Security Camera
-Summary(pl):	Kamera bezpieczeñstwa Gnome
+Summary:	A GNOME Security Camera
+Summary(pl):	Kamera bezpieczeñstwa GNOME
 Name:		gspy
 Version:	0.1.8
 Release:	0.1
@@ -20,7 +20,6 @@ compression using only the images of interest. Recent versions include
 a user defined command that is executed on each alarm. Typical uses 
 would be to copy the alarm picture to a remote site using ftp or scp, 
 email the picture to someone, play a sound annoucement... 
-
 
 %description -l pl
 Gspy pobiera obrazy z urz±dzenia video4linux i przetwarza je na
