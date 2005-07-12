@@ -1,4 +1,5 @@
 Summary:	A Gnome Security Camera
+Summary(pl):	Kamera bezpieczeñstwa Gnome
 Name:		gspy
 Version:	0.1.8
 Release:	0.1
@@ -12,25 +13,25 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Gspy retrieves images from a video4linux device and processes these
 into a daily mpeg movie on the disk drive. Each image is recorded with
-a time stamp to insure accurate real world correlation. Special motion
-detection algorithms are used to reduce the size of the daily movies
-by eliminating pictures with similar content as well as the normal
-compression obtained via the mpeg process. The result is a time lapse
-video per day with nonlinear time compression using only the images of
-interest. This program will only run on Linux machines which support a
-video4linux-device in 640x480 capture size. This software has been
-tested with the 2.4.0-test1 kernel, 2.4.0-test4 and the 2.2.16 kernel
-with the usb backport patch. You should have the Berkeley MPEG Tools
-installed if you wish to generate the MPEG files. Gspy can be used
-without the MPEG tools, as it will fill a directory with jpg images
-that can be processed or viewed at a later time. Versions from 0.1.6
-include a user defined command that is executed on each alarm. This
-command string can include a token(s) "%f%" that will get replaced
-with the alarm picture filename. Typical uses would be to copy the
-alarm picture to a remote site using ftp or scp, email the picture to
-someone, play a sound annoucement... "Step away from the keyboard!",
-turn on lights using a parallel port or X10 interface, or ???. 
-Have FUN
+a time stamp. Special motion detection algorithms are used to reduce
+the size of the daily movies by eliminating pictures with similar
+content The result is a time lapse video per day with nonlinear time
+compression using only the images of interest. Recent versions include
+a user defined command that is executed on each alarm. Typical uses 
+would be to copy the alarm picture to a remote site using ftp or scp, 
+email the picture to someone, play a sound annoucement... 
+
+
+%description -l pl
+Gspy pobiera obrazy z urz±dzenia video4linux i przetwarza je na
+dzienne filmy mpeg archiwizowane na dysku. Ka¿dy obraz jest nagrywany
+ze znacznikiem czasu. Specjalne algorytmy wykrywania ruchu s±
+wykorzystywane aby zredukowaæ wielko¶æ filmów przez eliminowanie
+obrazów z podobn± zawarto¶ci±. Efektem jest spowolniony obraz wideo z
+nielinniow± kompresj± czasu tylko na podstawie obrazów wartych uwagi.
+Ostatnie wersje potrafi± uruchamiaæ komendy zdefiniowane przez u¿ytkownika
+Typowe zastosowania to kopiowanie alarmuj±cego zdjêcia przez ftp/scp, 
+wys³anie emailem czy odtworzenie komunikatu... 
 
 %prep
 %setup -q -n %{name}
