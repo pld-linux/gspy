@@ -8,11 +8,15 @@ Group:		Applications
 Source0:	http://gspy.sourceforge.net/%{name}-%{version}-src.tar.gz
 # Source0-md5:	b8cdf73e0e11f0294bf979e195e66d32
 URL:		http://gspy.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	gettext-devel
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Gspy retrieves images from a video4linux device and processes these
-into a daily mpeg movie on the disk drive. Each image is recorded with
+into a daily MPEG movie on the disk drive. Each image is recorded with
 a time stamp. Special motion detection algorithms are used to reduce
 the size of the daily movies by eliminating pictures with similar
 content The result is a time lapse video per day with nonlinear time
@@ -23,14 +27,14 @@ email the picture to someone, play a sound annoucement...
 
 %description -l pl
 Gspy pobiera obrazy z urz±dzenia video4linux i przetwarza je na
-dzienne filmy mpeg archiwizowane na dysku. Ka¿dy obraz jest nagrywany
+dzienne filmy MPEG archiwizowane na dysku. Ka¿dy obraz jest nagrywany
 ze znacznikiem czasu. Specjalne algorytmy wykrywania ruchu s±
 wykorzystywane aby zredukowaæ wielko¶æ filmów przez eliminowanie
 obrazów z podobn± zawarto¶ci±. Efektem jest spowolniony obraz wideo z
-nielinniow± kompresj± czasu tylko na podstawie obrazów wartych uwagi.
+nieliniow± kompresj± czasu tylko na podstawie obrazów wartych uwagi.
 Ostatnie wersje potrafi± uruchamiaæ komendy zdefiniowane przez u¿ytkownika
 Typowe zastosowania to kopiowanie alarmuj±cego zdjêcia przez ftp/scp, 
-wys³anie emailem czy odtworzenie komunikatu... 
+wys³anie e-mailem czy odtworzenie komunikatu... 
 
 %prep
 %setup -q -n %{name}
