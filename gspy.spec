@@ -1,5 +1,5 @@
 Summary:	A GNOME Security Camera
-Summary(pl):	Kamera bezpieczeñstwa GNOME
+Summary(pl.UTF-8):   Kamera bezpieczeÅ„stwa GNOME
 Name:		gspy
 Version:	0.1.8
 Release:	0.2
@@ -28,16 +28,16 @@ a user defined command that is executed on each alarm. Typical uses
 would be to copy the alarm picture to a remote site using ftp or scp, 
 email the picture to someone, play a sound annoucement... 
 
-%description -l pl
-Gspy pobiera obrazy z urz±dzenia video4linux i przetwarza je na
-dzienne filmy MPEG archiwizowane na dysku. Ka¿dy obraz jest nagrywany
-ze znacznikiem czasu. Specjalne algorytmy wykrywania ruchu s±
-wykorzystywane aby zredukowaæ wielko¶æ filmów przez eliminowanie
-obrazów z podobn± zawarto¶ci±. Efektem jest spowolniony obraz wideo z
-nieliniow± kompresj± czasu tylko na podstawie obrazów wartych uwagi.
-Ostatnie wersje potrafi± uruchamiaæ komendy zdefiniowane przez u¿ytkownika
-Typowe zastosowania to kopiowanie alarmuj±cego zdjêcia przez ftp/scp, 
-wys³anie e-mailem czy odtworzenie komunikatu... 
+%description -l pl.UTF-8
+Gspy pobiera obrazy z urzÄ…dzenia video4linux i przetwarza je na
+dzienne filmy MPEG archiwizowane na dysku. KaÅ¼dy obraz jest nagrywany
+ze znacznikiem czasu. Specjalne algorytmy wykrywania ruchu sÄ…
+wykorzystywane aby zredukowaÄ‡ wielkoÅ›Ä‡ filmÃ³w przez eliminowanie
+obrazÃ³w z podobnÄ… zawartoÅ›ciÄ…. Efektem jest spowolniony obraz wideo z
+nieliniowÄ… kompresjÄ… czasu tylko na podstawie obrazÃ³w wartych uwagi.
+Ostatnie wersje potrafiÄ… uruchamiaÄ‡ komendy zdefiniowane przez uÅ¼ytkownika
+Typowe zastosowania to kopiowanie alarmujÄ…cego zdjÄ™cia przez ftp/scp, 
+wysÅ‚anie e-mailem czy odtworzenie komunikatu... 
 
 %prep
 %setup -q -n %{name}
