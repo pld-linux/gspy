@@ -1,5 +1,5 @@
 Summary:	A GNOME Security Camera
-Summary(pl.UTF-8):   Kamera bezpieczeństwa GNOME
+Summary(pl.UTF-8):	Kamera bezpieczeństwa GNOME
 Name:		gspy
 Version:	0.1.8
 Release:	0.2
