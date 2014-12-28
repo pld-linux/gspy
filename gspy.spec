@@ -11,7 +11,7 @@ Patch0:		%{name}-asm_prog.patch
 URL:		http://gspy.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtkxmhtml-devel
 BuildRequires:	intltool
 BuildRequires:	libtool
