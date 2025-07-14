@@ -41,7 +41,7 @@ wysłanie e-mailem czy odtworzenie komunikatu...
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__gettextize}
